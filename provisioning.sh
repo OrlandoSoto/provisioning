@@ -1,5 +1,10 @@
 #!/bin/bash
 echo 'hello'
+
+# Scripts
+cp .bash_aliases ~/
+source ~/.bash_aliases
+
 apt-get update
 apt-get upgrade
 apt-get -y install git-core
@@ -34,7 +39,9 @@ apt-get update
 apt-get -y install docker-ce
 apt-get -y install docker-compose
 
+# Python libs
 apt-get -y install python-pip
 apt-get -y install libxml2-dev libxslt1-dev
 
+# Utils
 apt-get -y install vim
